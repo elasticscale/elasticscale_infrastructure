@@ -1,0 +1,5 @@
+# make sure your prefix is unique, as it will be used for a s3 bucket name and dynamodb state table
+prefix: elasticscale-infra
+environment: infra
+some_specific_var_for_this_env: booya
+# it is also possible to pass these variables into the module using TF_VAR_secret_key_stuff (environment variables)

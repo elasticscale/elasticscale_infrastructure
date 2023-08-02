@@ -1,0 +1,4 @@
+region: eu-west-1
+some_global_var: woohoo
+# change this to your own security account id (so users in your security account can login to this account by assuming a role)
+security_account_id: 689298222225
