@@ -43,8 +43,8 @@ inputs = {
   }
   enable_tfsec                   = false
   codestar_connection_arn        = dependency.infrastructure.outputs.codestar_connection_arn
-  repository_name_infrastructure = "elasticscale/acmesystems_infrastructure"
-  repository_name_modules        = "elasticscale/acmesystems_infrastructure_modules"
+  repository_name_infrastructure = "elasticscale/elasticscale_infrastructure"
+  repository_name_modules        = "elasticscale/elasticscale_infrastructure_modules"
   full_modules_url               = "git::ssh://git@github.com/elasticscale/elasticscale_infrastructure_modules.git"
   terragrunt_docker_image        = "${dependency.infrastructure.outputs.image_base_url}devopsinfra/docker-terragrunt:aws-tf-1.5.5-tg-0.50.1"
   tfsec_docker_image             = "${dependency.infrastructure.outputs.image_base_url}aquasec/tfsec:v1.28"
