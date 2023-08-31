@@ -41,6 +41,8 @@ inputs = {
       initial_auto_apply = true
     }
   }
+  // my repos are generated in the master branch (not main)
+  modules_branch_name		         = "master"  
   enable_tfsec                   = false
   codestar_connection_arn        = dependency.infrastructure.outputs.codestar_connection_arn
   repository_name_infrastructure = "elasticscale/elasticscale_infrastructure"
